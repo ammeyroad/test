@@ -1,4 +1,4 @@
-<h3 align="center">Vue Tailwind</h3>
+n<h3 align="center">Vue Tailwind</h3>
 <p align="center">A simple starter template for Vue JS + Tailwind</p>
 
 <img src="./src/assets/banner.png" width="100%" alt="">
