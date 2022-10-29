@@ -1,98 +1,67 @@
-import {
-	createRouter,
-	createWebHistory
-} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 
-const routes = [{
+const routes = [
+	{
 		name: 'Home',
 		path: '/',
-		component: Home
+		component: Home 
 	},
 	{
-		name: 'user',
+		name: 'beranda',
+		path: '/beranda',
+		component: () => import('@/views/beranda.vue')
+	},
+	{
+		name: 'About',
+		path: '/about',
+		component: () => import('@/views/About.vue')
+	},
+	{
+		name: 'Aboutus',
+		path: '/aboutus',
+		component: () => import('@/views/AboutUs.vue')
+	},
+	{
+		name: 'User',
 		path: '/user',
-		component: () => import('@/views/user.vue')
-	},
-	{
-		name: 'user-deposit',
-		path: '/user-deposit',
-		component: () => import('@/views/user-deposit.vue')
-	},
-	{
-		name: 'user-withdraw',
-		path: '/user-withdraw',
-		component: () => import('@/views/user-withdraw.vue')
-	},
-	{
-		name: 'user-transaction',
-		path: '/user-transaction',
-		component: () => import('@/views/user-transaction.vue')
+		component: () => import('@/views/User.vue')
 	},
 	{
 		name: 'user-refferral',
-		path: '/user-refferral',
+		path: '/refferral',
 		component: () => import('@/views/user-refferral.vue')
 	},
 	{
-		name: 'user-login',
-		path: '/user-login',
-		component: () => import('@/views/user-login.vue')
+		name: 'lotre',
+		path: '/lotre',
+		component: () => import('@/views/lotre.vue')
 	},
 	{
-		name: 'aboutus',
-		path: '/aboutus',
-		component: () => import('@/views/aboutus.vue')
+		name: 'bonus-prediksi',
+		path: '/bonus-prediksi',
+		component: () => import('@/views/bonus-prediksi.vue')
+	},
+
+	{
+		name: 'games-spin',
+		path: '/games-spin',
+		component: () => import('@/views/games-spin.vue')
 	},
 	{
-		name: 'bonus',
-		path: '/bonus',
-		component: () => import('@/views/bonus.vue')
+		name: 'games-slot',
+		path: '/games-slot',
+		component: () => import('@/views/games-slot.vue')
 	},
 	{
-		name: 'bonus-lotre',
-		path: '/bonus-lotre',
-		component: () => import('@/views/bonus-lotre.vue')
+		name: 'games-bingo',
+		path: '/games-bingo',
+		component: () => import('@/views/games-bingo.vue')
 	},
 	{
-		name: 'fairness',
-		path: '/fairness',
-		component: () => import('@/views/fairness.vue')
-	},
-	{
-		name: 'leaderboard',
-		path: '/leaderboard',
-		component: () => import('@/views/leaderboard.vue')
-	},
-	{
-		name: 'sport',
-		path: '/sport',
-		component: () => import('@/views/sport.vue')
-	},
-	{
-		name: 'g-baccarat',
-		path: '/g-baccarat',
-		component: () => import('@/views/g-baccarat.vue')
-	},
-	{
-		name: 'g-slot',
-		path: '/g-slot',
-		component: () => import('@/views/g-slot.vue')
-	},
-	{
-		name: 'g-spin',
-		path: '/g-spin',
-		component: () => import('@/views/g-spin.vue')
-	},
-	{
-		name: 'g-bingo',
-		path: '/g-bingo',
-		component: () => import('@/views/g-bingo.vue')
-	},
-	{
-		name: 'g-prediction',
-		path: '/g-prediction',
-		component: () => import('@/views/g-prediction.vue')
+		name: 'games-bacarat',
+		path: '/games-bacarat',
+		component: () => import('@/views/games-bacarat.vue')
 	},
 	{
 		name: 'test',

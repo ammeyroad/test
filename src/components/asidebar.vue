@@ -62,10 +62,8 @@ const info = [
             class="focus:shadow-outline group flex items-center space-x-6 rounded-md p-2 font-medium text-accent  hover:bg-black/50 hover:opacity-100 hover:shadow-lg hover:shadow-black/50 focus:bg-secondary duration-300">
             <span class="btn btn-accent btn-square animate-pulse ">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                <path fill-rule="evenodd"
-                  d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 01-.375.65 2.249 2.249 0 000 3.898.75.75 0 01.375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 17.625v-3.026a.75.75 0 01.374-.65 2.249 2.249 0 000-3.898.75.75 0 01-.374-.65V6.375zm15-1.125a.75.75 0 01.75.75v.75a.75.75 0 01-1.5 0V6a.75.75 0 01.75-.75zm.75 4.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0v-.75zm-.75 3a.75.75 0 01.75.75v.75a.75.75 0 01-1.5 0v-.75a.75.75 0 01.75-.75zm.75 4.5a.75.75 0 00-1.5 0V18a.75.75 0 001.5 0v-.75zM6 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H6.75A.75.75 0 016 12zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
-                  clip-rule="evenodd" />
-              </svg>
+  <path fill-rule="evenodd" d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 01-.375.65 2.249 2.249 0 000 3.898.75.75 0 01.375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 17.625v-3.026a.75.75 0 01.374-.65 2.249 2.249 0 000-3.898.75.75 0 01-.374-.65V6.375zm15-1.125a.75.75 0 01.75.75v.75a.75.75 0 01-1.5 0V6a.75.75 0 01.75-.75zm.75 4.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0v-.75zm-.75 3a.75.75 0 01.75.75v.75a.75.75 0 01-1.5 0v-.75a.75.75 0 01.75-.75zm.75 4.5a.75.75 0 00-1.5 0V18a.75.75 0 001.5 0v-.75zM6 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H6.75A.75.75 0 016 12zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" clip-rule="evenodd" />
+</svg>
 
             </span>
             <span class="text-xl text-left font-bold">Lottery</span>
@@ -73,7 +71,7 @@ const info = [
         </li>
         <li class="hover:px-2 duration-300">
           <a href="#"
-            class="focus:shadow-outline group flex items-center space-x-6 rounded-md p-2 font-medium text-accent  hover:bg-black/50 hover:opacity-100 hover:shadow-lg hover:shadow-black/50 focus:bg-secondary duration-300">
+          class="focus:shadow-outline group flex items-center space-x-6 rounded-md p-2 font-medium text-accent  hover:bg-black/50 hover:opacity-100 hover:shadow-lg hover:shadow-black/50 focus:bg-secondary duration-300">
             <span class="btn btn-primary btn-square animate-pulse ">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                 <path fill-rule="evenodd"
@@ -95,7 +93,7 @@ const info = [
             <p class="text-normal font-bold">{{ item.label }} </p>
           </a>
         </li>
-
+      
       </ul>
 
       <ul class="mt-5">
@@ -105,28 +103,28 @@ const info = [
             <span class="btn btn-ghost group-hover:btn-active btn-square ">
               <a v-html="item.imga"></a>
             </span>
-
+            
             <p class="text-normal font-bold">{{ item.label }} </p>
           </a>
         </li>
       </ul>
     </div>
     <ul class="mt-5 bg-black/50">
-      <li class="">
-        <a href="#"
-          class="focus:shadow-outline group flex items-center space-x-6 rounded-md p-2 font-medium text-primary-content opacity-50 hover:bg-black/50 hover:opacity-100 hover:shadow-lg hover:shadow-pink-700/50 focus:bg-secondary">
-          <span class="btn  btn-square  ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-              <path fill-rule="evenodd"
-                d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
-                clip-rule="evenodd" />
-            </svg>
+        <li class="">
+          <a href="#"
+            class="focus:shadow-outline group flex items-center space-x-6 rounded-md p-2 font-medium text-primary-content opacity-50 hover:bg-black/50 hover:opacity-100 hover:shadow-lg hover:shadow-pink-700/50 focus:bg-secondary">
+            <span class="btn  btn-square  ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd"
+                  d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
+                  clip-rule="evenodd" />
+              </svg>
 
-          </span>
-          <span class="text-md text-left font-bold">Sign Out</span>
-        </a>
-      </li>
-    </ul>
+            </span>
+            <span class="text-md text-left font-bold">Sign Out</span>
+          </a>
+        </li>
+      </ul>
   </div>
 
 </template>

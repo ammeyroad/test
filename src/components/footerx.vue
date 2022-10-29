@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-base-200">
-		<div class="max-w-screen-xl mx-auto pt-24">
-			<div class="grid grid-cols-6 gap-x-7 gap-y-14 pt-8 pb-12 md:grid-cols-12 px-5">
+		<div class="max-w-screen-xl mx-auto pt-24 pb-5 px-20">
+			<div class="grid grid-cols-6 gap-x-7 gap-y-14 pt-8 pb-12 md:grid-cols-12">
 				<div class="col-span-6 md:col-span-4 text-white">
 					<!-- Logo -->
 					<p class="
@@ -162,8 +162,9 @@
             flex flex-col
             items-center
             justify-between
-						bg-base-300
-
+          rounded-xl
+						bg-slate-900
+						
             sm:flex-row sm:space-y-0
           p-8
           ">
