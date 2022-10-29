@@ -1,19 +1,21 @@
 <script setup>
 import BonusLotre from '../components/bonus-lotre.vue';
-import games from '../components/sub-game.vue';
+import games from '../components/h-game.vue';
+import HLeaderboard from '../components/h-leaderboard.vue';
 </script>
 
 <template>
   <div class="">
-    <div class="max-w-screen-lg mx-auto">
-      <div class="grid grid-cols-3 space-x-8">
-        <div class="md:col-span-2 col-span-3">
+
+    <div class="max-w-screen-xl mx-auto">
+      <div class="max-w-screen-xl mx-auto sm:flex ">
+        <div class="sm:w-3/5 w-full p-2">
           <div id="slot" class="max-w-screen-xl mx-auto">
             <!-- atas -->
             <div class="flex-col mx-auto">
               <div class="flex justify-between mb-4 items-center">
                 <div class="flex">
-                  <h3 class="text-3xl text-primary-content">Game<span class="font-black">Spin</span></h3>
+                  <h3 class="text-3xl text-primary-content">Crypto<span class="font-black"> Prediction</span></h3>
                 </div>
                 <div class="flex space-x-2">
                   <button class="btn  btn-square">
@@ -47,19 +49,18 @@ import games from '../components/sub-game.vue';
                 <div class="p-2 bg-base-300 rounded-t-2xl">
                   <div
                     class="relative bg-[url('/src/assets/bg-1.png')] bg-blend-color-dodge bg-base-300 bg-cover bg-center hover:bg-bottom bg-no-repeat duration-300 rounded-2xl">
-                    <div class="py-72 text-center z-30 ">
+                    <div class=" py-60 text-center z-30 ">
+
                       <h3 class="text-2xl font-bold text-white">Play, Invest,Exchange and <br> Join the Contest</h3>
                       <button class="btn btn-primary my-8 mt-24">LOGIN NOW</button>
                     </div>
-                    <img src="/src/assets/g-spin-10.png"
-                      class="absolute inset-0 w-full animate-heartBeat animate-spin-slow z-20 "
-                      style="mix-blend-mode: lighten; opacity: 50%;" alt="">
+
                     <div class="absolute inset-0 ">
 
-                      <img src="/src/assets/g-spin-09.png"
-                        class="object-cover right-0  absolute top-0 animate-getar z-20" alt="pesawat">
-                      <img src="/src/assets/g-spin-08.png"
-                        class="left-0 group-hover:scale-105 bottom-0 absolute animate-geser z-20" alt="chart">
+                      <img src="/src/assets/g-bingo-16.png"
+                        class="object-cover right-0 w-full h-full  absolute top-0 animate-pulse z-20"
+                        style="mix-blend-mode: lighten;" alt="pesawat">
+
                     </div>
                   </div>
                 </div>
@@ -138,13 +139,14 @@ import games from '../components/sub-game.vue';
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="sm:w-2/5 w-full p-2">
           <BonusLotre />
         </div>
       </div>
     </div>
-    <div class="max-w-screen-lg mx-auto">
+    <div class="max-w-screen-xl mx-auto">
       <games />
+      <HLeaderboard />
     </div>
 
   </div>

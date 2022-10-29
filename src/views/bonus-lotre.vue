@@ -1,21 +1,25 @@
 <template>
-	<main class="max-w-screen-lg mx-auto">
+	<main class="max-w-screen-xl mx-auto">
 		<h3 class=" px-4 text-3xl text-primary-content">Lottery Jackpot</h3>
 		<BonusLotre />
 		<div class="px-4">
 			<div class="my-1 flex items-center">
-				<h3 class="text-3xl text-secondary mt-2">Your<span class="font-black"> ACTIVITY</span></h3>
+				<h3 class="sm:text-2xl text-xl text-secondary mt-2">Your<span class="font-black"> ACTIVITY</span></h3>
 			</div>
-			<div class="bg-base-200 gap-4 p-5 py-12 rounded-xl">
-				<div class="flex items-end gap-4 space-x-4">
-					<div class="form-control w-1/3"><label class="label"><span class="label-text">Amount</span><span
-								class="label-text-alt">20
-								chips</span></label><input type="text" placeholder="Type here" class="input input-bordered w-full" />
-					</div><button class="btn btn-square">x</button>
-					<div class="form-control w-1/3"><label class="label"><span class="label-text">Total
+			<div class="bg-base-300 gap-4 p-5 py-12 rounded-xl">
+				<div class="flex space-x-2 items-end">
+					<div class="form-control w-3/12"><label class="label"><span class="label-text"></span><span
+								class="label-text-alt">x 20
+								chips</span></label><input type="text" placeholder="2"
+							class="input input-bordered w-full text-center" />
+					</div>
+					<button class="btn btn-square">x</button>
+					<div class="form-control w-5/12"><label class="label"><span class="label-text">Total
 								Price</span></label><input type="text" placeholder="12"
-							class="input input-bordered w-full text-center" /></div><button class="btn btn-warning w-1/3">buy
-						coupon</button>
+							class="input input-bordered w-full text-center" />
+					</div>
+					<button class="btn btn-warning w-3/12">buy coupon
+					</button>
 				</div>
 				<p class="text-sm mt-8">Purchase raffle tickets. A random ticket will be drawn at the end of the raffle. The
 					ticket owner will win the pot, which equals 95.00% of all purchased tickets value. The more tickets you
@@ -25,25 +29,25 @@
 		<div class="md:flex gap-5 md:space-x-4 p-4 md:px-4">
 			<div class="md:w-2/3 w-full space-y-3">
 				<div class="my-1 flex items-center">
-					<h3 class="text-2xl text-primary-content mt-5">How<span class="font-black">To Play</span></h3>
+					<h3 class="text-xl text-primary-content mt-5">How<span class="font-black">To Play</span></h3>
 				</div>
-				<div class="md:flex md:space-x-4 text-black">
-					<div class="group md:w-1/3 mb-4 bg-secondary rounded-xl hover:shadow-xl px-8 py-5 pb-10 space-y-4">
-						<img class="w-16 group-hover:scale-110 duration-300" src="/src/assets/021-wallet.png" alt="illustration"
+				<div class="md:flex md:space-x-4 text-primary-content">
+					<div class="group md:w-1/3 mb-4 bg-base-300 rounded-xl hover:shadow-xl px-8 py-5 pb-10 space-y-4">
+						<img class="w-16 group-hover:scale-110 duration-300" src="/src/assets/icon-wd.png" alt="illustration"
 							loading="lazy">
-						<h3 class="text-2xl font-semibold text-black">BUY TICKET</h3>
+						<h3 class="text-2xl font-semibold text-primary-content">BUY TICKET</h3>
 						<p>Be active in chat and take a chance to get up to 100 credits in reward.</p>
 					</div>
-					<div class="group md:w-1/3 mb-4 bg-secondary rounded-xl hover:shadow-xl px-8 py-5 pb-10 space-y-4">
-						<img class="w-16 group-hover:scale-110 duration-300" src="/src/assets/021-wallet.png" alt="illustration"
+					<div class="group md:w-1/3 mb-4 bg-base-300 rounded-xl hover:shadow-xl px-8 py-5 pb-10 space-y-4">
+						<img class="w-16 group-hover:scale-110 duration-300" src="/src/assets/icon-rafle.png" alt="illustration"
 							loading="lazy">
-						<h3 class="text-2xl font-semibold text-black">WAIT A DRAW</h3>
+						<h3 class="text-2xl font-semibold text-primary-content">WAIT A DRAW</h3>
 						<p>Be active in chat and take a chance to get up to 100 credits in reward.</p>
 					</div>
-					<div class="group md:w-1/3 mb-4 bg-secondary rounded-xl hover:shadow-xl px-8 py-5 pb-10 space-y-4">
-						<img class="w-16 group-hover:scale-110 duration-300" src="/src/assets/021-wallet.png" alt="illustration"
+					<div class="group md:w-1/3 mb-4 bg-base-300 rounded-xl hover:shadow-xl px-8 py-5 pb-10 space-y-4">
+						<img class="w-16 group-hover:scale-110 duration-300" src="/src/assets/icon-chip.png" alt="illustration"
 							loading="lazy">
-						<h3 class="text-2xl font-semibold text-black">CHECK PRIZE</h3>
+						<h3 class="text-2xl font-semibold text-primary-content">CHECK PRIZE</h3>
 						<p>Be active in chat and take a chance to get up to 100 credits in reward.</p>
 					</div>
 				</div>
@@ -77,9 +81,9 @@
 			</div>
 			<div class="md:w-1/3 my-5 w-full space-y-3">
 				<div class="my-1 flex items-center">
-					<h3 class="text-2xl mt-3 text-primary-content">Participant</h3>
+					<h3 class="text-xl mt-3 text-primary-content">Participant</h3>
 				</div>
-				<div class="hover:bg-base-200 bg-base-200/30 rounded-xl duration-300">
+				<div class="hover:bg-base-200 bg-base-300 rounded-xl duration-300">
 					<div class="p-4">
 						<p class="text-warning">Mr. Emery Maggio</p>
 						<div class="card-actions mt-2 justify-between items-center">
@@ -93,7 +97,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hover:bg-base-200 bg-base-200/30 rounded-xl duration-300">
+				<div class="hover:bg-base-200 bg-base-300 rounded-xl duration-300">
 					<div class="p-4">
 						<p class="text-warning">Mr. Emery Maggio</p>
 						<div class="card-actions mt-2 justify-between items-center">
@@ -107,7 +111,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hover:bg-base-200 bg-base-200/30 rounded-xl duration-300">
+				<div class="hover:bg-base-200 bg-base-300 rounded-xl duration-300">
 					<div class="p-4">
 						<p class="text-warning">Mr. Emery Maggio</p>
 						<div class="card-actions mt-2 justify-between items-center">
@@ -121,7 +125,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hover:bg-base-200 bg-base-200/30 rounded-xl duration-300">
+				<div class="hover:bg-base-200 bg-base-300 rounded-xl duration-300">
 					<div class="p-4">
 						<p class="text-warning">Mr. Emery Maggio</p>
 						<div class="card-actions mt-2 justify-between items-center">
@@ -135,7 +139,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hover:bg-base-200 bg-base-200/30 rounded-xl duration-300">
+				<div class="hover:bg-base-200 bg-base-300 rounded-xl duration-300">
 					<div class="p-4">
 						<p class="text-warning">Mr. Emery Maggio</p>
 						<div class="card-actions mt-2 justify-between items-center">
@@ -149,7 +153,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hover:bg-base-200 bg-base-200/30 rounded-xl duration-300">
+				<div class="hover:bg-base-200 bg-base-300 rounded-xl duration-300">
 					<div class="p-4">
 						<p class="text-warning">Mr. Emery Maggio</p>
 						<div class="card-actions mt-2 justify-between items-center">

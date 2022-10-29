@@ -1,20 +1,20 @@
 <template>
 
-  <div class="flex-row items-stretch rounded-2xl md:space-x-0 md:space-y-0 mb-8 mt-16 bg-base-300 p-2">
+  <div class="flex-col w-full bg-base-300 rounded-xl p-3">
     <div
-      class="grid group relative bg-warning hover:bg-secondary bg-blend-overlay duration-300 h-[300px] hero rounded-t-xl bg-[url('/src/assets/bg-1.png')] bg-cover bg-no-repeat hover:bg-top bg-center ">
+      class="grid group overflow-hidden relative bg-warning hover:bg-secondary bg-blend-overlay duration-300 sm:h-[300px] hero rounded-xl bg-[url('/src/assets/bg-1.png')] bg-cover bg-no-repeat hover:bg-top bg-center ">
       <img src="/src/assets/ele-7.png" class="w-[90%] absolute animate-spin-slow" alt="">
       <img src="/src/assets/ele-2.png" class="h-full  absolute .animate-heartBeat  " alt="">
-      <div class="w-full text-primary-content text-center z-10 mb-10">
+      <div class="w-full text-primary-content text-center z-10 my-10">
         <div class="mb-3 group-hover:scale-110 duration-300 group-hover:mb-5">
           <p class="uppercase bg-base-300 w-max mx-auto px-8 pt-2 rounded-t-xl textarea-secondary">Lottery
             Jackpot
           </p>
           <div class="bg-base-200 w-max px-8 py-4 rounded-xl border-8 border-base-300 mx-auto ">
-            <p class="uppercase text-4xl font-black text-secondary">$ 213.322 </p>
+            <p class="uppercase sm:text-4xl text-2xl font-black text-secondary">$ 213.322 </p>
             <progress class="progress progress-secondary w-56 bg-white" value="60" max="100"></progress>
           </div>
-          <button class="group-hover:opacity-100 group-hover:btn-sm btn-sm opacity-0 btn btn-warning mt-3">Buy
+          <button class="group-hover:opacity-100 opacity-0 btn btn-warning mt-3">Buy
             Coupon</button>
         </div>
       </div>
