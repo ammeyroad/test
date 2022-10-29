@@ -1,9 +1,10 @@
 <template>
 	<div class="">
-		<table class="table w-[100%] ">
-			<!-- head -->
-			<thead class="w-[100%] ">
-				<tr class=" group-[100%] border-b border-base-300 ">
+		<div class="overflow-x-auto">
+			<table class="table w-[100%] ">
+				<!-- head -->
+				<thead class="">
+					<tr class="border-b border-base-300 ">
 					<th class="w-[20%] bg-white/0 text-center font-bold">
 						<p class="my-2"> ID </p>
 					</th>
@@ -261,6 +262,7 @@
 				</tr>
 			</tbody>
 		</table>
+		</div>
 	</div>
 </template>
 

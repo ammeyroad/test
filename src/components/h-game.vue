@@ -1,118 +1,53 @@
 <template>
-	<div class="bg-base-200">
-		<div class="max-w-screen-xl mx-auto py-24 px-20">
-			<div class="p-4 my-1 flex items-center">
-				<svg xmlns="http://www.w3.org/2000/svg" class="fill-white mr-3 w-12 h-12" viewBox="0 0 24 24" width="24"
-					height="24">
+	<div class="">
+		<div class="max-w-screen-xl mx-auto py-12 px-2">
+			<div class="my-1 flex items-center">
+				<svg xmlns="http://www.w3.org/2000/svg" class="fill-white mr-3 w-8" viewBox="0 0 24 24" width="24" height="24">
 					<path fill="none" d="M0 0h24v24H0z" />
 					<path
 						d="M17 4a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H7a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6h10zm-7 5H8v2H6v2h1.999L8 15h2l-.001-2H12v-2h-2V9zm8 4h-2v2h2v-2zm-2-4h-2v2h2V9z" />
 				</svg>
-				<h3 class="text-3xl">FEATURED <span class="font-black">GAMES</span></h3>
+				<h3 class="text-2xl text-primary-content">FEATURED <span class="font-black text-primary-content">GAMES</span>
+				</h3>
 			</div>
-			<div class="flex flex-wrap items-center bg-warning  bg-opacity-50 rounded-2xl py-1 px-1">
-				<div class="md:w-1/3 w-1/2 p-2">
+
+			<div class="grid sm:grid-cols-4 grid-cols-2 gap-4">
+				<div v-for="(item, i) in game" :key="i" class="">
 					<div
-						class="group bg-warning/10 p-10 rounded-xl bg-no-repeat bg-cover bg-right hover:shadow-lg hover:bg-warning hover:shadow-warning/50 bg-blend-overlay duration-300 border-warning border-2"
-						style="background-image: url(/src/assets/game-pred.jpg)">
-						<div class=" self-place-center my-18 text-black text-center duration-300 transition-all">
-							<h3 class="text-5xl font-black opacity-50 group-hover:opacity-100 ">SL000T
-							</h3>
-							<button href=""
-								class="btn btn-secondary btn-circle btn-lg my-14 group-hover:my-14 opacity-0 group-hover:opacity-100">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-									<path fill="none" d="M0 0h24v24H0z" />
-									<path
-										d="M7.752 5.439l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" />
-								</svg>
-							</button>
-							<h3 class="text-lg font-normal opacity-50 group-hover:opacity-100">Inhouse Game
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="md:w-1/3 w-1/2 p-2">
-					<div
-						class="group bg-warning/10 p-10 rounded-xl bg-[url('/src/assets/game-slot.jpg')] bg-no-repeat bg-cover bg-right hover:shadow-lg hover:bg-warning hover:shadow-warning/50 bg-blend-overlay duration-300 border-warning border-2">
-						<div class=" self-place-center my-18 text-black text-center duration-300 transition-all">
-							<h3 class="text-5xl font-black opacity-50 group-hover:opacity-100 ">SL000T
-							</h3>
-							<button href=""
-								class="btn btn-secondary btn-circle btn-lg my-14 group-hover:my-14 opacity-0 group-hover:opacity-100">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-									<path fill="none" d="M0 0h24v24H0z" />
-									<path
-										d="M7.752 5.439l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" />
-								</svg>
-							</button>
-							<h3 class="text-lg font-normal opacity-50 group-hover:opacity-100">Inhouse Game
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="md:w-1/3 w-1/2 p-2">
-					<div
-						class="group bg-warning/10 p-10 rounded-xl bg-[url('/src/assets/game-slot.jpg')] bg-no-repeat bg-cover bg-right hover:shadow-lg hover:bg-warning hover:shadow-warning/50 bg-blend-overlay duration-300 border-warning border-2">
-						<div class=" self-place-center my-18 text-black text-center duration-300 transition-all">
-							<h3 class="text-5xl font-black opacity-50 group-hover:opacity-100 ">SL000T
-							</h3>
-							<button href=""
-								class="btn btn-secondary btn-circle btn-lg my-14 group-hover:my-14 opacity-0 group-hover:opacity-100">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-									<path fill="none" d="M0 0h24v24H0z" />
-									<path
-										d="M7.752 5.439l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" />
-								</svg>
-							</button>
-							<h3 class="text-lg font-normal opacity-50 group-hover:opacity-100">Inhouse Game
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="md:w-1/3 w-1/2 p-2">
-					<div
-						class="group bg-warning/10 p-10 rounded-xl bg-[url('/src/assets/game-slot.jpg')] bg-no-repeat bg-cover bg-right hover:shadow-lg hover:bg-warning hover:shadow-warning/50 bg-blend-overlay duration-300 border-warning border-2">
-						<div class=" self-place-center my-18 text-black text-center duration-300 transition-all">
-							<h3 class="text-5xl font-black opacity-50 group-hover:opacity-100 ">SL000T
-							</h3>
-							<button href=""
-								class="btn btn-secondary btn-circle btn-lg my-14 group-hover:my-14 opacity-0 group-hover:opacity-100">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-									<path fill="none" d="M0 0h24v24H0z" />
-									<path
-										d="M7.752 5.439l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" />
-								</svg>
-							</button>
-							<h3 class="text-lg font-normal opacity-50 group-hover:opacity-100">Inhouse Game
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="md:w-2/3 w-full p-2">
-					<div
-						class="group bg-warning/10 p-10 rounded-xl bg-[url('/src/assets/cs-bola.jpg')] bg-no-repeat bg-cover bg-right hover:shadow-lg hover:bg-warning hover:shadow-warning/50 bg-blend-overlay duration-300 border-warning border-2">
-						<div class=" self-place-center my-18 text-black text-center duration-300 transition-all">
-							<h3 class="text-5xl font-black opacity-50 group-hover:opacity-100 ">SPORT BET
-							</h3>
-							<button href="#"
-								class="btn btn-secondary  btn-lg my-14 group-hover:my-14 opacity-0 group-hover:opacity-100">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-									<path fill="none" d="M0 0h24v24H0z" />
-									<path
-										d="M7.752 5.439l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" />
-								</svg>AVALIABLE SOON
-							</button>
-							<h3 class="text-lg font-normal opacity-50 group-hover:opacity-100">Inhouse Game
-							</h3>
+						class="overflow-hidden rounded-xl group relative flex flex-col justify-center hover:shadow-lg hover:shadow-warning/50 duration-300 ">
+						<img :src="item.imga" alt=""
+							class="absolute p-0  mix-blend-mult mix-blend-multiply/40 group-hover:mix-blend-multiply w-full bg-warning rounded-xl group-hover:p-4 duration-300" />
+						<div class="py-14 z-20 ">
+							<div class="group opacity-0 group-hover:opacity-100 mx-auto text-center text-white">
+								<a :href="item.href" class="btn btn-warning animate-heartBeat btn-circle btn-lg my-4">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+										<path fill="none" d="M0 0h24v24H0z" />
+										<path
+											d="M7.752 5.439l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" />
+									</svg>
+								</a>
+								<h3 class="text-lg font-black opacity-50 group-hover:opacity-100 uppercase">{{ item.label }}
+								</h3>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
-
 </template>
 
-<script setup>
 
+<script setup>
+const game = [
+	{ href: '/game-bacarat', label: 'BACARAT', imga: '/src/assets/gc-bacarat.jpg', },
+	{ href: '/game-slot', label: 'SLOT', imga: '/src/assets/gc-slot.jpg', },
+	{ href: '/game-spin', label: 'SPIN', imga: '/src/assets/gc-spin.jpg', },
+	{ href: '/game-bingo', label: 'BINGO', imga: '/src/assets/gc-bingo.jpg', },
+	{ href: '/bonus-prediction', label: 'PREDIC', imga: '/src/assets/gc-pred.jpg', },
+	{ href: '/bonus-lotre', label: 'Lottery', imga: '/src/assets/gc-pred.jpg', },
+	{ href: '#', label: 'SOON', imga: '/src/assets/gc-gamelain.jpg', },
+	{ href: '#', label: 'SOON', imga: '/src/assets/gc-bola.jpg', },
+]	
 </script>
